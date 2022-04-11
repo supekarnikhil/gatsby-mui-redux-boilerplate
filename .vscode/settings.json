@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    ".cache": true,
+    "node_modules": true,
+    "public": false
+  },
+  "search.exclude": {
+    ".cache": true,
+    "node_modules": true,
+    "public": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.insertSpaces": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.debug": false,
+  "eslint.lintTask.enable": false,
+  "eslint.format.enable": true
+}
