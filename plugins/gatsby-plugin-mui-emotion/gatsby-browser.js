@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
-import React from 'react';
-import { CacheProvider } from '@emotion/react';
-import getEmotionCache from './getEmotionCache';
+import React from "react";
+import { CacheProvider } from "@emotion/react";
+import getEmotionCache from "./getEmotionCache";
 
 const cache = getEmotionCache();
 
