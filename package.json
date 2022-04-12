@@ -31,6 +31,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
     "stylelint": "^14.6.1",
     "stylelint-config-prettier": "^9.0.3",
@@ -43,7 +44,7 @@
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "commit": "cz",
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,css,json,html,md}\"",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint --fix src/**/*.js"
   },
@@ -51,5 +52,10 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx,css,json,html,md}": "prettier --write",
+    "*.css": "stylelint --fix"
   }
 }
