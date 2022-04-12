@@ -27,6 +27,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "husky": "^7.0.4",
@@ -41,7 +42,10 @@
     "serve": "gatsby serve",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "commit": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint --fix src/**/*.js"
   },
   "config": {
     "commitizen": {
