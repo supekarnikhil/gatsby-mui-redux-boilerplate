@@ -11,8 +11,10 @@
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
     "@mui/material": "latest",
+    "dotenv": "^16.0.0",
     "gatsby": "latest",
     "gatsby-plugin-react-helmet": "latest",
+    "prop-types": "^15.8.1",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"
@@ -41,10 +43,11 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "commit": "cz",
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{js,jsx,css,json,html,md}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json,html,md}\"",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint --fix src/**/*.js"
   },

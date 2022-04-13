@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   plugins: [
     "gatsby-plugin-top-layout",
@@ -7,6 +9,7 @@ module.exports = {
     "gatsby-plugin-mui-emotion",
   ],
   siteMetadata: {
-    title: "My page",
+    title: process.env.SITE_NAME,
+    homepage: process.env.SITE_HOME,
   },
 };
