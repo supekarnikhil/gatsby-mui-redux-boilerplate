@@ -78,7 +78,7 @@ export default function Footer() {
             </Grid>
           ))}
         </Grid>
-        <Copyright sx={{ mt: 5 }} />
+        <Copyright siteTitle="My Website" />
       </Container>
     </Box>
   );
